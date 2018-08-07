@@ -17,13 +17,15 @@ class Knowledge(Base):
 	student_id = Column(Integer, primary_key=True)
 	student_name = Column(String)
 	interests = Column(String)
+	# rating = Column(Integer)
 	def __repr__(self):
 		return("student name: {}\n"
 				"student's interests: {}\n").format(
 				self.student_name,
 				self.interests)
+				# self.rating)
 x = Knowledge(student_name="shir" , interests="playing on the three guitars she owns, but one is broken so she only use the other two")
-print(x)
+# print(x)
 
 # y = Knowledge(student_name="waseem" , interests="playing tennis ")
 # print(y)
